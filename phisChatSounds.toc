@@ -1,0 +1,6 @@
+## Interface: 90005
+## Title: phisChatSounds
+## Author: phistoh
+## Version: 1.0
+## Notes: Plays a sound effect when a message appears in the guild chat
+phisChatSounds.lua
