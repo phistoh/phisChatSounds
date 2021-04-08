@@ -13,5 +13,6 @@ This addon does its work automatically. Though you can customize when a louder n
 - **1.0**: Initial upload
 
 ## To-Do
+- [ ] Ignore own messages
 - [ ] Option to disable the louder notification sound
-- [ ] *(Maybe)* Options for which channels to include
+- [ ] *(Maybe)* Options for other channels (party/raid/...) to include
