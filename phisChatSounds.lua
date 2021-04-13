@@ -27,7 +27,7 @@ local function playNotification(self, event, ...)
 		local currentTime = GetServerTime()
 		phis.loudMessageIntervall = phisChatSoundsSavedVars.loudMessageIntervall
 		
-		if (sender ~= GetUnitName("player")..'-'..GetRealmName()) then
+		if (sender ~= GetUnitName("player")..'-'..GetRealmName():gsub("%s+", "")) then
 			if phisChatSoundsSavedVars.playLoudMessage and ((currentTime - phis.lastMessageTime) > phis.loudMessageIntervall) then 
 				PlaySound(12889, "master") -- AlarmClockWarning3
 			else
