@@ -9,6 +9,7 @@ This addon does its work automatically. Though you can customize when a louder n
 - **phisChatSounds.toc** is the standard WoW table-of-contents file containing addon information
 
 ## Changes
+- **1.1.4**: Update for Plunderstorm (10.2.6) (new interface number)
 - **1.1.3**: Update for Chains of Domination (9.1.0) (new interface number)
 - **1.1.2**: Fixed bug with servernames containing whitespaces
 - **1.1.1**: It is now possible to disable the louder notification sound. Also the addon now ignores own messages.
