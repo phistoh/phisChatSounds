@@ -9,7 +9,7 @@ local phisFrame = CreateFrame('Frame', addonName..'CheckFrame', UIParent)
 
 local function initAddon()
 	-- first time loading the addon
-	print('|cFF6666CC'..GetAddOnMetadata(addonName,'Title')..' v'..GetAddOnMetadata(addonName,'Version')..'|r loaded for the first time.')
+	print('|cFF6666CC'..C_AddOns.GetAddOnMetadata(addonName,'Title')..' v'..C_AddOns.GetAddOnMetadata(addonName,'Version')..'|r loaded for the first time.')
 	phisChatSoundsSavedVars = {}
 	phisChatSoundsSavedVars.loudMessageIntervall = 600
 	phisChatSoundsSavedVars.playLoudMessage = true
@@ -67,7 +67,7 @@ SlashCmdList['PCS'] = function(msg)
 		phisChatSoundsSavedVars.loudMessageIntervall = tonumber(msg)
 		print('|cFF6666CC'..addonName..':|r '..'Time between messages now set to '..phisChatSoundsSavedVars.loudMessageIntervall..' seconds.')
 	else
-		print('|cFF6666CC'..addonName..' v'..GetAddOnMetadata(addonName,'Version')..'|r: Toggle the louder notification sound with "/pcs toggle" or set the time needed between two consecutive messages for a louder notification to occur with "/pcs [sec]" with [sec] being the number of seconds.\nLouder notification sound |cFF6666CC'..(phisChatSoundsSavedVars.playLoudMessage and 'enabled' or 'disabled')..'|r.\nTime between messages currently set to |cFF6666CC'..phisChatSoundsSavedVars.loudMessageIntervall..'|r seconds.')
+		print('|cFF6666CC'..addonName..' v'..C_AddOns.GetAddOnMetadata(addonName,'Version')..'|r: Toggle the louder notification sound with "/pcs toggle" or set the time needed between two consecutive messages for a louder notification to occur with "/pcs [sec]" with [sec] being the number of seconds.\nLouder notification sound |cFF6666CC'..(phisChatSoundsSavedVars.playLoudMessage and 'enabled' or 'disabled')..'|r.\nTime between messages currently set to |cFF6666CC'..phisChatSoundsSavedVars.loudMessageIntervall..'|r seconds.')
 	end	
 end
 
